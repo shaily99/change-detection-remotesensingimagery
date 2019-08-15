@@ -1,0 +1,3 @@
+change detection API to submit data
+
+https://egujforestgis.gujarat.gov.in/forest_mobile_web_test/change_detect?plot_id=1 &lat=24&lon=72&remarks=rem&source_image_date=24-5-2019&target_image_date=24-6-2019

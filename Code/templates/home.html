@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts %}
+    <article class="media content-section">
+        <div class="media-body">
+            <h2><a class="article-title" href="#">ID {{ post.id }}</a></h2>
+            <p class="article-content">Date from {{post.from}}</p>
+            <p class="article-content">Date to {{post.to}}</p>
+        </div>
+    </article>
+    {% endfor %}
+{% endblock content %}
