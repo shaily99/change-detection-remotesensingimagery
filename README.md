@@ -34,10 +34,11 @@ Our objective was to develop the prototype of a computational technique that wou
 #### For Detailed methodology, refer to the [project report]( change-detection-remotesensingimagery/Change-detection-in-land-usage-using-remote-sensing-imagery.pdf )
 
 ## Using the project:
-1. the coordinates along with area of interests should be added to the coordinates.txt file.
-2. run the flask application by using pyhton3
-3. Once the interface is displayed, enter the id of the corrdinates that you wish to process along with the duration of monitoring.
-4. The results are displayed on the screen, which include the change maps and labelled changes. In the backend an api request sends an alert to the central database in the event that changes are detected.
+1. The coordinates along with area of interests should be added to the coordinates.txt file. This file contains the id, coordinates and bounding box for area of interest
+2. Run python3 getextent.py with the coordinates of interest and obtain the bounding box for interest in the displayed image. Now copy these local coordinates to the coordinates.txt file
+3. Run the flask application by using pyhton3 flk.py
+4. Once the interface is displayed, enter the id of the corrdinates that you wish to process along with the duration of monitoring. Note You can enter only valid ids.
+5. The results are displayed on the screen, which include the change maps and labelled changes. In the backend an api request sends an alert to the central database in the event that changes are detected.
 
 ## References:
 1. Adrian Rosebroke, Comparison of images using SSIM, September 15, 2014 retrieved
